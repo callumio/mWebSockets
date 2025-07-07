@@ -4,16 +4,16 @@
 #if (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_AVR) ||                            \
   (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_SAMD21) ||                           \
   (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_SAM) ||                              \
-  (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_UNO_R4) ||
-(PLATFORM_ARCH == PLATFORM_ARCHITECTURE_PORTENTA)
+  (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_UNO_R4) ||                           \
+  (PLATFORM_ARCH == PLATFORM_ARCHITECTURE_PORTENTA)
 #  include <avr/pgmspace.h>
 #else
 #  include <pgmspace.h>
 #endif
 
-  const char PROGMEM b64_alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                      "abcdefghijklmnopqrstuvwxyz"
-                                      "0123456789+/";
+const char PROGMEM b64_alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    "abcdefghijklmnopqrstuvwxyz"
+                                    "0123456789+/";
 
 /* 'Private' declarations */
 inline void a3_to_a4(unsigned char *a4, unsigned char *a3);
