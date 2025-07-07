@@ -19,5 +19,5 @@
   "homepage": "https://skaarj1989.github.io/mWebSockets/autobahn-testsuite/servers/",
   "dependencies": {},
   "frameworks": "*",
-  "platforms": "avr,esp8266,esp32,sam,samd,stm32,renesas_uno"
+  "platforms": "avr,esp8266,esp32,sam,samd,stm32,renesas_uno,mbed_portenta"
 }
