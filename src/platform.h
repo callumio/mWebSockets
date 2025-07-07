@@ -33,13 +33,10 @@
 #  define PLATFORM_ARCH PLATFORM_ARCHITECTURE_SAMD21
 #elif defined(ARDUINO_ARCH_STM32)
 #  define PLATFORM_ARCH PLATFORM_ARCHITECTURE_STM32
-<<<<<<< HEAD
 #elif defined(ARDUINO_ARCH_RENESAS)
 #  define PLATFORM_ARCH PLATFORM_ARCHITECTURE_UNO_R4
-== == == =
-#elif defined(ARDUINO_ARCH_MBED_PORTENTA)
+#elif defined(ARDUINO_ARCH_MBED_PORTENTA) || defined(ARDUINO_ARCH_MBED)
 #  define PLATFORM_ARCH PLATFORM_ARCHITECTURE_PORTENTA
->>>>>>> mbed_portenta
 #else
 #  error "Unsupported platform"
 #endif
