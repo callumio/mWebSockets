@@ -43,7 +43,6 @@ enum class WebSocketError {
  * @class WebSocket
  */
 class WebSocket {
-  friend class WebSocketServer;
   struct header_t;
 
 public:
